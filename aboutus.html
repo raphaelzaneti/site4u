@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site4u About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="nav-menu">
+        <div class="navbar-content d-none" id="navbar-content">
+            <ul class="nav-menu-list">
+                <li class="nav-menu-items navHome">
+                    <a class="nav-link first-nav-link-home" href="/">Home</a>
+                </li>
+                <li class="nav-menu-items navProjects">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+                <li class="nav-menu-items navAbout">
+                    <a class="nav-link" href="/aboutus">About</a>
+                </li>
+                <li class="nav-menu-items navContact">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-menu-items navContact">
+                    <a class="nav-link button" href="/JoinUs">Join Us</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-light">
+            <button class="navbar-toggler" type="button" onclick=toggleNavMenu()>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+
+    <section class="ourMission">
+        <div class="container">
+
+            <h1>
+                ABOUT US
+            </h1>
+
+            <article class="aboutus__cards">
+                <h3 class="title">Our Mission</h3>
+                <div class="desc aboutus__cards-description">
+                    <p>
+                        The COVID-19 Pandemic has introduced an array of obstacles for small businesses, startups and
+                        individuals passionate about innovation. Our mission is to bridge the gap between you and a
+                        strong
+                        digital presence. We prioritize speed, quality and transparency in our work, ensuring a usable
+                        and
+                        scalable product for <em>free</em>.
+                    </p>
+                </div>
+            </article>
+
+            <article class="aboutus__cards">
+                <h3 class="title">Why Us?</h3>
+                <div class="desc aboutus__cards-description">
+                    <p>
+                        Finding affordable and reliable designers and developers is a remarkably tedious task. We
+                        understand
+                        that your budget can be tough due to unexpected circumstances, which is why we are offering our
+                        services
+                        for free. Our developers, designers and content creators are dedicated to creating a site
+                        perfect for
+                        you. Our objective is to make the experience easy for your corporate or personal needs.
+                    </p>
+                </div>
+            </article>
+
+            <article class="FAQ aboutus__cards">
+                <h3>Frequent Asked Questions</h3>
+                <div class="about__cards-FAQ-field">
+                    <span class="about__cards-FAQ-question" onclick=toggleAnswer(this)>
+                        <strong>
+                            <img src="./play-circle-fill.svg" alt="Circle">
+                        </strong> What are some sites that you have built?
+                    </span>
+                    <span class="about__cards-FAQ-answer d-none">
+                        <strong>A:</strong> We have built enough to ensure that you will love your site if you decide to
+                        go
+                        with us, check out the "Projects" page.
+                    </span>
+                </div>
+
+                <div class="about__cards-FAQ-field">
+                    <span class="about__cards-FAQ-question" onclick=toggleAnswer(this)>
+                        <strong>
+                            <img src="./play-circle-fill.svg" alt="Circle">
+                        </strong> How can we trust you?
+                    </span>
+                    <span class="about__cards-FAQ-answer d-none">
+                        <strong>A:</strong> All of our services are free for use, meaning there is nothing on our behalf
+                        that could impact you negatively. You will receive all source code and rights to the result.
+                    </span>
+                </div>
+
+                <div class="about__cards-FAQ-field">
+                    <span class="about__cards-FAQ-question" onclick=toggleAnswer(this)>
+                        <strong>
+                            <img src="./play-circle-fill.svg" alt="Circle">
+                        </strong> What if we need it faster?
+                    </span>
+                    <span class="about__cards-FAQ-answer d-none">
+                        <strong>A:</strong> Since we consist of experienced developers, we can try to build your website
+                        ASAP if a request is put in. Contact us ASAP to get a timing estimate.
+                    </span>
+                </div>
+
+                <div class="about__cards-FAQ-field">
+                    <span class="about__cards-FAQ-question" onclick=toggleAnswer(this)>
+                        <strong>
+                            <img src="./play-circle-fill.svg" alt="Circle">
+                        </strong> Can we sell this website as our own?
+                    </span>
+                    <span class="about__cards-FAQ-answer d-none">
+                        <strong>A:</strong> Once the site is developed it is up to you to choose what to do with it. But
+                        we
+                        will be displaying all finished sites under our "Projects" tab.
+                    </span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/40ce8aeba1.js" crossorigin="anonymous"></script>
+<script src="./aboutus.js"></script>
+
+</html>

@@ -1,0 +1,96 @@
+body{
+    background-color: #e8e8e8;
+    font-family: poppins;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.ourMission{
+    text-align: center;
+    margin: 3%;
+    margin-top: 80px;
+}
+.ourMission .container {
+    width: 50%;
+}
+
+.ourMission .title{
+    font-size: 4rem;
+}
+
+.FAQ .desc {
+    text-align: left !important;
+}
+
+.aboutus__cards{
+    margin-top: 10%;
+    background-image: linear-gradient(90deg,#FF5F6D,#FFC371);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.aboutus__cards .title{
+    font-size: 1rem;
+}
+
+.aboutus__cards:hover > .title, .aboutus__cards:active > .title{
+    font-size: 1.75rem;
+    transition: font-size 0.5s;
+}
+
+.aboutus__cards-description{
+    height: 0;
+}
+
+.aboutus__cards-description p{
+    height: 0;
+    font-size: 0;
+    opacity: 0;
+}
+
+.aboutus__cards:hover > .aboutus__cards-description, .aboutus__cards:active > .aboutus__cards-description{
+    height: 100%;
+    transition: height 0.5s;
+}
+
+.aboutus__cards:hover > .aboutus__cards-description p, .aboutus__cards:active > .aboutus__cards-description p{
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transition: opacity 3s;
+}
+
+.FAQ h3{
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.about__cards-FAQ-field{
+    text-align: left;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.about__cards-FAQ-question{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about__cards-FAQ-question:hover{
+    cursor: pointer;
+}
+
+.about__cards-FAQ-answer{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 767px){
+    .ourMission .container {
+        width: 90%;
+    }
+}

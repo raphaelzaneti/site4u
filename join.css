@@ -1,0 +1,92 @@
+body{
+    font-family: poppins;
+    
+}
+
+.background-gradient{
+    position: absolute;
+    background-image: linear-gradient(90deg, #FF5F6D, #FFC371);
+    height: 200vh;
+    z-index: -1 !important;
+    width: 100%;
+}
+
+#landingPage {
+    padding-left: 1%;
+}
+
+.joinusclassholder {
+    padding: 20% 0;
+}
+
+.contact100-form-title {
+    display: block;
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 49px;
+}
+
+.buttonToForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.buttonToForm .cus-btn {
+    background-color: #619eff;
+    font-size: 1.5rem!important;
+    color: #fff!important;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none!important;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 400px;
+}
+
+.buttonToForm .cus-btn:hover, .buttonToForm .cus-btn:hover + .buttonForm-position-list-active{
+    transform: translateY(-4px);
+}
+
+.buttonForm-position-list{
+    display: none;
+}
+
+.cus-btn.cus-btn-opened{
+    border-radius: 10px 10px 0 0;
+}
+
+.buttonForm-position-list.buttonForm-position-list-active{
+    display: block;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 0 0 10px 10px;
+}
+
+.buttonForm-position-list span{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.buttonForm-position-list ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.buttonForm-position-list li {
+    text-align: center;
+}
